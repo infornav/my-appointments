@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Specialty;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -26,7 +27,8 @@ class DoctorController extends Controller
      */
     public function create()
     {
-        return view('doctors.create');
+        $specialties = Specialty::all();
+        return view('doctors.create',compact('specialties'));
     }
 
     /**
@@ -37,6 +39,7 @@ class DoctorController extends Controller
      */
     public function store(Request $request)
     {
+//        dd($request->all());
         $rules = [
             'name' => 'required|min:3',
             'email' => 'required|email',
@@ -47,14 +50,16 @@ class DoctorController extends Controller
 
        $this->validate($request, $rules);
 
-       User::create(
+       $user = User::create(
            //$request->all(): - esto caursaria que puedan ingresar los campos que pueden afectar a seguridad
            $request->only('name', 'email','dni','address','phone')
        +[
-               'role' => 'doctor',
+               'role' => 'charts',
                'password' => bcrypt($request->input('password')),
     ]
        );
+
+       $user->specialties()->attach($request->input('specialties'));
 
        $notification = "El médico se ha registrado correctamente";
        return redirect('/doctors')->with(compact('notification'));
@@ -80,7 +85,9 @@ class DoctorController extends Controller
     public function edit($id)
     {
         $doctor = User::doctors()->findOrFail($id);
-        return view('doctors.edit',compact('doctor'));
+        $specialties = Specialty::all();
+        $specialty_ids = $doctor->specialties()->pluck('specialties.id');
+        return view('doctors.edit',compact('doctor','specialties','specialty_ids'));
     }
 
     /**
@@ -110,6 +117,8 @@ class DoctorController extends Controller
             $data['password'] = bcrypt($password);
         $user->fill($data);
         $user->save();
+
+        $user->specialties()->sync($request->input('specialties'));
 
         $notification = "El médico se ha actualizado correctamente";
         return redirect('/doctors')->with(compact('notification'));

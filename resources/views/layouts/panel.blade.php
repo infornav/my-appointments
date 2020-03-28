@@ -32,6 +32,7 @@
     <!-- Page plugins -->
     <!-- Argon CSS -->
     <link rel="stylesheet" href="{{ asset('css/argon.css?v=1.2.0') }}" type="text/css">
+    @yield('styles')
 </head>
 
 <body>
@@ -40,7 +41,7 @@
     <div class="scrollbar-inner">
         <!-- Brand -->
         <div class="sidenav-header  align-items-center">
-            <a class="navbar-brand" href="javascript:void(0)">
+            <a class="navbar-brand" href="/home">
                 <img src="{{ asset('img/brand/blue.png') }}" class="navbar-brand-img" alt="...">
             </a>
         </div>
@@ -128,8 +129,10 @@
 <!-- Optional JS -->
 <script src="{{ asset('vendor/chart.js/dist/Chart.min.js') }}"></script>
 <script src="{{ asset('vendor/chart.js/dist/Chart.extension.js') }}"></script>
+@yield('scripts')
 <!-- Argon JS -->
 <script src="{{ asset('js/argon.js?v=1.2.0') }}"></script>
+
 </body>
 
 </html>

@@ -15,7 +15,7 @@ class DoctorMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if(auth()->user()->role == 'doctor')
+        if(auth()->user()->role == 'charts')
             return $next($request);
 
         return redirect('/');

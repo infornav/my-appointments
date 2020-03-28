@@ -2,17 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25b4867e-48da-4292-b368-0b38c22dd75f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DoctorController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/appointments/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/my-appointments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my-appointments.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Doctorcontroller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SpecialtyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SpecialtyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DoctorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DoctorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Doctor/ScheduleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Doctor/ScheduleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/DoctorMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/DoctorMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Specialty.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Specialty.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_23_203339_create_work_days_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_23_203339_create_work_days_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/doctors/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/doctors/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/doctors/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/doctors/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/includes/panel/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/panel/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/panel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/schedule.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/schedule.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,6 +152,9 @@
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZMJYfqRJKYhcWT31W9vsfZfLgG" />
@@ -159,12 +174,13 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\my-appointments\app\Http\Controllers\Admin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\www\my-appointments\resources\views\patients" />
       <recent name="C:\laragon\www\my-appointments\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\my-appointments\resources\views\appointments\tables" />
+      <recent name="C:\laragon\www\my-appointments\app\Http\Controllers\Admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -194,7 +210,14 @@
       <workItem from="1584841674111" duration="521000" />
       <workItem from="1584842264983" duration="7180000" />
       <workItem from="1584929802971" duration="6318000" />
-      <workItem from="1585008617490" duration="8102000" />
+      <workItem from="1585008617490" duration="11428000" />
+      <workItem from="1585097321399" duration="14910000" />
+      <workItem from="1585160194870" duration="780000" />
+      <workItem from="1585162948167" duration="852000" />
+      <workItem from="1585180856592" duration="14207000" />
+      <workItem from="1585264095917" duration="17773000" />
+      <workItem from="1585326607202" duration="10072000" />
+      <workItem from="1585339129582" duration="11152000" />
     </task>
     <servers />
   </component>
@@ -212,14 +235,18 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="359" y="29" key="#Menus_and_Toolbars" timestamp="1585013360662">
+    <state x="359" y="29" key="#Menus_and_Toolbars" timestamp="1585104806199">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="359" y="29" key="#Menus_and_Toolbars/0.0.1366.738@0.0.1366.738" timestamp="1585013360662" />
-    <state x="643" y="166" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog" timestamp="1585013349334">
+    <state x="359" y="29" key="#Menus_and_Toolbars/0.0.1366.738@0.0.1366.738" timestamp="1585104806199" />
+    <state x="402" y="170" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585266411898">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="643" y="166" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/0.0.1366.738@0.0.1366.738" timestamp="1585013349334" />
+    <state x="402" y="170" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1585266411898" />
+    <state x="643" y="166" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog" timestamp="1585104804738">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="643" y="166" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/0.0.1366.738@0.0.1366.738" timestamp="1585104804738" />
     <state x="363" y="103" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584842055968">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -228,10 +255,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1584846702682" />
-    <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584846722373">
+    <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1585275774786">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1584846722373" />
+    <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1585275774786" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1584755148158">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -244,17 +271,25 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="313" y="220" key="Performance.Activity.Monitor/0.0.1366.738@0.0.1366.738" timestamp="1584660373298" />
+    <state x="469" y="78" key="RollbackChangesDialog" timestamp="1585104762875">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="469" y="78" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1585104762875" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1584753823058">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1584753823058" />
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1585008628776">
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1585339138663">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1585008628776" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1585012337650">
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1585339138663" />
+    <state x="339" y="159" key="run.anything.popup" timestamp="1585277663282">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1585012337650" />
+    <state x="339" y="159" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1585277663282" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1585349011942">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1585349011942" />
   </component>
 </project>
