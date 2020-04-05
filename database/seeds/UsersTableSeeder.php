@@ -32,11 +32,11 @@ class UsersTableSeeder extends Seeder
 
         User::create([
             'name' => 'Médico 1',
-            'email' => 'charts@hotmail.com',
+            'email' => 'doctor@hotmail.com',
             'email_verified_at' => now(),
             'password' => bcrypt('123456'), // password
             'remember_token' => Str::random(10),
-            'role' => 'charts'
+            'role' => 'doctor'
         ]);
 
         factory(User::class, 50)->state('patient')->create();

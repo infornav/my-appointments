@@ -27,7 +27,7 @@ $factory->define(User::class, function (Faker $faker) {
         'dni'=> $faker->unique()->randomNumber(8,true),
         'address' => $faker->address,
         'phone' => $faker->e164PhoneNumber,
-        'role' => $faker->randomElement(['patient','charts'])
+        'role' => $faker->randomElement(['patient','doctor'])
     ];
 });
 
@@ -35,6 +35,6 @@ $factory->state(User::class, 'patient',[
     'role' => 'patient'
 ]);
 
-$factory->state(User::class, 'charts',[
-    'role' => 'charts'
+$factory->state(User::class, 'doctor',[
+    'role' => 'doctor'
 ]);

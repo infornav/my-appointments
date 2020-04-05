@@ -6,7 +6,7 @@ use App\Appointment;
 use App\User;
 use Faker\Generator as Faker;
 
-$factory->define(\App\Appointment::class, function (Faker $faker) {
+$factory->define(Appointment::class, function (Faker $faker) {
     $doctorIds = User::doctors()->pluck('id');
     $patientIds = User::patients()->pluck('id');
     $date = $faker->dateTimeBetween('-1 years','now');

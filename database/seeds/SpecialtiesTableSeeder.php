@@ -24,7 +24,7 @@ class SpecialtiesTableSeeder extends Seeder
                 'name' => $specialtyName
             ]);
             $specialty->users()->saveMany(
-                factory(User::class,3)->state('charts')->make()
+                factory(User::class,3)->state('doctor')->make()
             );
         }
         User::find(3)->specialties()->save($specialty);

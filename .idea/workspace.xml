@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25b4867e-48da-4292-b368-0b38c22dd75f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/appointments/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/my-appointments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my-appointments.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DoctorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DoctorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Doctor/ScheduleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Doctor/ScheduleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/DoctorMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/DoctorMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Specialty.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Specialty.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/AppointmentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AppointmentFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_23_203339_create_work_days_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_23_203339_create_work_days_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/SpecialtiesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/SpecialtiesTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/doctors/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/doctors/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/doctors/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/doctors/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/panel/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/panel/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/schedule.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/schedule.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,6 +199,8 @@
       <workItem from="1585264095917" duration="17773000" />
       <workItem from="1585326607202" duration="10072000" />
       <workItem from="1585339129582" duration="11152000" />
+      <workItem from="1585415188949" duration="70000" />
+      <workItem from="1586055093663" duration="2034000" />
     </task>
     <servers />
   </component>
@@ -279,10 +262,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1584753823058" />
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1585339138663">
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1586055097257">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1585339138663" />
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1586055097257" />
     <state x="339" y="159" key="run.anything.popup" timestamp="1585277663282">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
