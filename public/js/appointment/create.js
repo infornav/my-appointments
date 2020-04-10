@@ -7,13 +7,13 @@ const noHoursAlert = `<div class="alert alert-danger" role="alert">
 
 $(function(){
     $specialty = $('#specialty');
-    $doctor = $('#charts');
+    $doctor = $('#doctor');
     $date = $('#date');
     $hours = $('#hours');
 
     $specialty.change(() =>  {
         const specialtyId = $specialty.val();
-        const url = `/specialties/${specialtyId}/doctors`;
+        const url = `/api/specialties/${specialtyId}/doctors`;
         $.getJSON(url, onDoctorsLoaded);
     });
 
@@ -23,9 +23,8 @@ $(function(){
 
 function onDoctorsLoaded(doctors){
     let htmlOptions = '';
-    //console.log(data);
     doctors.forEach(doctor => {
-        //console.log(`${charts.id} - ${charts.name}`);
+        // console.log(`${doctors.id} - ${doctors.name}`);
         htmlOptions += `<option value="${doctor.id}">${doctor.name}</option>`;
     });
     $doctor.html(htmlOptions);
@@ -35,7 +34,7 @@ function onDoctorsLoaded(doctors){
 function loadHours() {
     const selectedDate = $date.val();
     const doctorId = $doctor.val();
-    const url = `/schedule/hours?date=${selectedDate}&doctor_id=${doctorId}`;
+    const url = `/api/schedule/hours?date=${selectedDate}&doctor_id=${doctorId}`;
     $.getJSON(url, displayHours);
 }
 
