@@ -20,13 +20,13 @@ class AuthController extends Controller
     public function login(Request $request){
         $credentials = $request->only(['email','password']);
 
-        $token = auth('api')->attempt($credentials);
-        if($token){
+        $jwt = auth('api')->attempt($credentials);
+        if($jwt){
             $user = auth('api')->user();
 
             $success = true;
 
-            return compact('success','user','token');
+            return compact('success','user','jwt');
         } else{
             $success = false;
             $message = 'Invalid credentials';
