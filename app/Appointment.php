@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Appointment extends Model
 {
     protected $fillable = [
+        'id',
         'description',
         'specialty_id',
         'doctor_id',
@@ -15,6 +16,16 @@ class Appointment extends Model
         'scheduled_date',
         'scheduled_time',
         'type'
+    ];
+
+    protected $hidden = [
+        'specialty_id',
+        'doctor_id',
+        'scheduled_time'
+    ];
+
+    protected $appends = [
+      'scheduled_time_12'
     ];
 
     //este metodo nos permitira acceder desde un appointment a la especialidad asociada
