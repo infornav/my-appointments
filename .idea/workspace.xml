@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="25b4867e-48da-4292-b368-0b38c22dd75f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Appointment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Appointment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AppointmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AppointmentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AppointmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AppointmentController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +211,8 @@
       <workItem from="1586560835985" duration="1433000" />
       <workItem from="1586568647676" duration="1366000" />
       <workItem from="1586577752186" duration="1727000" />
-      <workItem from="1586627984873" duration="9845000" />
+      <workItem from="1586627984873" duration="10461000" />
+      <workItem from="1586664679582" duration="226000" />
     </task>
     <servers />
   </component>
@@ -279,10 +278,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1584753823058" />
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1586628062304">
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1586664877426">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1586628062304" />
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1586664877426" />
     <state x="92" y="92" width="1182" height="554" key="dock-window-1" timestamp="1586456702833">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
