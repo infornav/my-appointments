@@ -3,11 +3,16 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Traits\ValidateAndCreatePatient;
+use App\User;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
+    use ValidateAndCreatePatient;
+
     protected function respondWithToken($token)
     {
         return response()->json([
@@ -41,5 +46,16 @@ class AuthController extends Controller
         $message = 'Logout correct';
 
         return compact('success','message');
+    }
+
+    public function register(Request $request){
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        $jwt = auth('api')->login($user);
+        $success = true;
+
+        return compact('success','user','jwt');
     }
 }
