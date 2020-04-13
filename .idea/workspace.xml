@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25b4867e-48da-4292-b368-0b38c22dd75f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/my-appointments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my-appointments.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/argon.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/argon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +143,7 @@
       <path value="$PROJECT_DIR$/vendor/namshi/jose" />
       <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
       <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/kawankoding/laravel-fcm" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZMJYfqRJKYhcWT31W9vsfZfLgG" />
@@ -213,7 +220,8 @@
       <workItem from="1586577752186" duration="1727000" />
       <workItem from="1586627984873" duration="10461000" />
       <workItem from="1586664679582" duration="1951000" />
-      <workItem from="1586728892993" duration="5812000" />
+      <workItem from="1586728892993" duration="7033000" />
+      <workItem from="1586798446893" duration="9405000" />
     </task>
     <servers />
   </component>
@@ -279,10 +287,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1584753823058" />
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1586728924531">
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1586798456217">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1586728924531" />
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1586798456217" />
     <state x="92" y="92" width="1182" height="554" key="dock-window-1" timestamp="1586456702833">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
