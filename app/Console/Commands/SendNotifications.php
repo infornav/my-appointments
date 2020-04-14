@@ -44,18 +44,18 @@ class SendNotifications extends Command
         $this->info('Buscando citas médicas:');
         $appointmentsTomorrow = $this->getAppointments24Hours($now->copy());
         foreach($appointmentsTomorrow as $appointment){
-            $appointment->patient->sendFCM('No olvides tu cita mañana a las '.$appointment['scheduled_time_12']);
-            $this->info('Mensaje FCM enviado 24h antes al paciente (ID): '.$appointment['patient_id']);
+            $appointment->patient->sendFCM('No olvides tu cita mañana a las '.$appointment->scheduled_time_12);
+            $this->info('Mensaje FCM enviado 24h antes al paciente (ID): '.$appointment->patient_id);
         }
         $headers = ['id','scheduled_date','scheduled_time','patient_id'];
-        $this->table($headers,$appointmentsTomorrow);
+        $this->table($headers,$appointmentsTomorrow->toArray());
 
         $appointmentsNextHour = $this->getAppointmentsNextHour($now->copy());
         foreach($appointmentsNextHour as $appointment){
             $appointment->patient->sendFCM('Tienes una cita en 1 hora. Te esperamos.');
-            $this->info('Mensaje FCM enviado faltando 1h al paciente (ID): '.$appointment['patient_id']);
+            $this->info('Mensaje FCM enviado faltando 1h al paciente (ID): '.$appointment->patient_id);
         }
-        $this->table($headers,$appointmentsNextHour);
+        $this->table($headers,$appointmentsNextHour->toArray());
     }
 
     private function getAppointments24Hours($now){
@@ -63,8 +63,7 @@ class SendNotifications extends Command
             ->where('scheduled_date', $now->addDay()->toDateString())
             ->where('scheduled_time','>=', $now->copy()->subMinutes(3)->toTimeString())
             ->where('scheduled_time','<', $now->copy()->addMinutes(2)->toTimeString())
-            ->get(['id','scheduled_date','scheduled_time','patient_id'])
-            ->toArray();
+            ->get(['id','scheduled_date','scheduled_time','patient_id']);
     }
 
     private function getAppointmentsNextHour($now){
@@ -72,8 +71,7 @@ class SendNotifications extends Command
             ->where('scheduled_date', $now->toDateString())
             ->where('scheduled_time','>=', $now->copy()->subMinutes(3)->toTimeString())
             ->where('scheduled_time','<', $now->copy()->addMinutes(2)->toTimeString())
-            ->get(['id','scheduled_date','scheduled_time','patient_id'])
-            ->toArray();
+            ->get(['id','scheduled_date','scheduled_time','patient_id']);
     }
 
 

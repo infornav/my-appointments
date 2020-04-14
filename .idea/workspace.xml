@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25b4867e-48da-4292-b368-0b38c22dd75f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Commands/SendNotifications.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/SendNotifications.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +220,7 @@
       <workItem from="1586627984873" duration="10461000" />
       <workItem from="1586664679582" duration="1951000" />
       <workItem from="1586728892993" duration="7033000" />
-      <workItem from="1586798446893" duration="18659000" />
+      <workItem from="1586798446893" duration="18983000" />
     </task>
     <servers />
   </component>
