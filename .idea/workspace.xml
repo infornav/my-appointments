@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="25b4867e-48da-4292-b368-0b38c22dd75f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/appointments/tables/pending.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/appointments/tables/pending.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +221,7 @@
       <workItem from="1586627984873" duration="10461000" />
       <workItem from="1586664679582" duration="1951000" />
       <workItem from="1586728892993" duration="7033000" />
-      <workItem from="1586798446893" duration="12727000" />
+      <workItem from="1586798446893" duration="17568000" />
     </task>
     <servers />
   </component>
@@ -302,9 +303,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="159" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1585277663282" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1586824986653">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1586829581980">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1586824986653" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1586829581980" />
   </component>
 </project>
