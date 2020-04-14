@@ -54,7 +54,7 @@ class DoctorController extends Controller
            //$request->all(): - esto caursaria que puedan ingresar los campos que pueden afectar a seguridad
            $request->only('name', 'email','dni','address','phone')
        +[
-               'role' => 'charts',
+               'role' => 'doctor',
                'password' => bcrypt($request->input('password')),
     ]
        );

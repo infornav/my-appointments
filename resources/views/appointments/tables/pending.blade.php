@@ -7,7 +7,7 @@
             <th scope="col">Especialidad</th>
             @if($role == 'patient')
                 <th scope="col">Médico</th>
-            @elseif($role == 'charts')
+            @elseif($role == 'doctor')
                 <th scope="col">Paciente</th>
             @endif
             <th scope="col">Fecha</th>
@@ -29,7 +29,7 @@
                     <td>
                         {{  $appointment->doctor->name }}
                     </td>
-                @elseif($role == 'charts')
+                @elseif($role == 'doctor')
                     <td>
                         {{  $appointment->patient->name }}
                     </td>
@@ -50,7 +50,7 @@
                             <i class="ni ni-zoom-split-in"></i>
                         </a>
                     @endif
-                    @if($role == 'charts' || $role == 'admin')
+                    @if($role == 'doctor' || $role == 'admin')
                         <form action="{{ url('appointments/'.$appointment->id.'/confirm') }}" method="POST"
                               class="d-inline-block">
                             @csrf
@@ -61,7 +61,7 @@
                         <a href="{{ url('appointments/'.$appointment->id.'/cancel') }}" class="btn btn-sm btn-danger">
                             <i class="ni ni-fat-delete"></i>
                         </a>
-                    @else
+                    @endif
                         <form action="{{ url('appointments/'.$appointment->id.'/cancel') }}" method="POST"
                               class="d-inline-block">
                             @csrf
@@ -69,7 +69,6 @@
                                 <i class="ni ni-fat-delete"></i>
                             </button>
                         </form>
-                    @endif
                 </td>
             </tr>
         @endforeach

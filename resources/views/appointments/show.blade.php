@@ -22,7 +22,7 @@
                         <strong>Médico: </strong> {{ $appointment->doctor->name }}
                     </li>
                 @endif
-                @if($role == 'charts' || $role = 'admin')
+                @if($role == 'doctor' || $role = 'admin')
                     <li>
                         <strong>Paciente: </strong> {{ $appointment->patient->name }}
                     </li>

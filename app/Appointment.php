@@ -35,7 +35,7 @@ class Appointment extends Model
         return $this->belongsTo(Specialty::class);
     }
 
-    //N $appointment->charts 1
+    //N $appointment->doctor 1
     public function doctor(){
         return $this->belongsTo(User::class);
     }

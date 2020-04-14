@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="25b4867e-48da-4292-b368-0b38c22dd75f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AppointmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AppointmentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/appointments/tables/pending.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/appointments/tables/pending.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +173,11 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="StructuralSearchPlugin">
+    <searchConfiguration name="user defined" created="1586826009131" text="charts" recursive="true" caseInsensitive="true" type="PHP" scope_type="PROJECT" scope_descriptor="" history="1">
+      <constraint name="__context__" within="" contains="" />
+    </searchConfiguration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -216,7 +220,7 @@
       <workItem from="1586627984873" duration="10461000" />
       <workItem from="1586664679582" duration="1951000" />
       <workItem from="1586728892993" duration="7033000" />
-      <workItem from="1586798446893" duration="11366000" />
+      <workItem from="1586798446893" duration="12713000" />
     </task>
     <servers />
   </component>
@@ -258,6 +262,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1586737569147" />
+    <state x="211" y="195" width="943" height="348" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1586826009112">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="211" y="195" width="943" height="348" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1366.738@0.0.1366.738" timestamp="1586826009112" />
     <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586737425503">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

@@ -24,7 +24,7 @@ class AppointmentController extends Controller
             $oldAppointments = Appointment::whereIn('status',['Atendida','Cancelada'])
                 ->paginate(10);
         }
-        elseif($role == 'charts'){
+        elseif($role == 'doctor'){
             $pendingAppointments = Appointment::where('status','Reservada')
                 ->where('doctor_id',auth()->id())
                 ->paginate(10);

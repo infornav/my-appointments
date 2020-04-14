@@ -7,7 +7,7 @@
             <th scope="col">Especialidad</th>
             @if($role == 'patient')
                 <th scope="col">Médico</th>
-            @elseif($role == 'charts')
+            @elseif($role == 'doctor')
                 <th scope="col">Paciente</th>
             @endif
             <th scope="col">Fecha</th>
@@ -29,7 +29,7 @@
                     <td>
                         {{  $appointment->doctor->name }}
                     </td>
-                @elseif($role == 'charts')
+                @elseif($role == 'doctor')
                     <td>
                         {{  $appointment->patient->name }}
                     </td>

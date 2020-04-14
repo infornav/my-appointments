@@ -12,8 +12,8 @@
 <ul class="navbar-nav">
 {{--    @if(auth()->user()->role == 'admin')--}}
 {{--        @include('includes.panel.menu.admin')--}}
-{{--    @elseif(auth()->user()->role == 'charts')--}}
-{{--        @include('includes.panel.menu.charts')--}}
+{{--    @elseif(auth()->user()->role == 'doctor')--}}
+{{--        @include('includes.panel.menu.doctor')--}}
 {{--    @else --}}{{-- patient --}}
 {{--        @include('includes.panel.menu.patient')--}}
 {{--    @endif--}}

@@ -21,7 +21,7 @@
                     (especialidad {{ $appointment->specialty->name }})
                     para el día {{ $appointment->scheduled_date }}:
                 </p>
-            @elseif($role == 'charts')
+            @elseif($role == 'doctor')
                 <p>Estas a punto de cancelar tu cita con el paciente
                     {{ $appointment->patient->name }}
                     (especialidad {{ $appointment->specialty->name }})

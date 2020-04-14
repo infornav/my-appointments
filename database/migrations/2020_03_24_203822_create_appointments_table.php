@@ -18,7 +18,7 @@ class CreateAppointmentsTable extends Migration
             //fk specialty
             $table->unsignedInteger('specialty_id');
             $table->foreign('specialty_id')->references('id')->on('specialties');
-            //fk charts
+            //fk doctor
             $table->unsignedInteger('doctor_id');
             $table->foreign('doctor_id')->references('id')->on('users');
             //fk patient
