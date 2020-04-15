@@ -62,7 +62,7 @@ class BackupDatabase extends Command
             $command .= sprintf('--password="%s" ', $password);
         }
         $command .= sprintf('%s > "%s"', $database, $path . $file);
-        $this->line('<fg=green>CMD: </><fg=yellow;bg=black>'. $command . '</>');
+        //$this->line('<fg=green>CMD: </><fg=yellow;bg=black>'. $command . '</>');
         exec($command, $output, $return);
         if ($return) {
             $this->line('<fg=red;bg=yellow>Error al intentar generar el Backup</>');
