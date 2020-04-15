@@ -4,6 +4,7 @@
     <list default="true" id="25b4867e-48da-4292-b368-0b38c22dd75f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Commands/SendNotifications.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/SendNotifications.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +30,13 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -220,7 +228,8 @@
       <workItem from="1586627984873" duration="10461000" />
       <workItem from="1586664679582" duration="1951000" />
       <workItem from="1586728892993" duration="7033000" />
-      <workItem from="1586798446893" duration="18983000" />
+      <workItem from="1586798446893" duration="20544000" />
+      <workItem from="1586884989984" duration="5060000" />
     </task>
     <servers />
   </component>
@@ -290,10 +299,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1584753823058" />
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1586798456217">
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1586886850934">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1586798456217" />
+    <state x="378" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1586886850934" />
     <state x="92" y="92" width="1182" height="554" key="dock-window-1" timestamp="1586456702833">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

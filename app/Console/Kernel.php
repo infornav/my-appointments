@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        \App\Console\Commands\BackupDatabase::class
     ];
 
     /**
@@ -24,6 +24,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        //$schedule->command('database:backup')->everyMinute();
+
         $filePath = storage_path('logs/fcm_send.log');
         $schedule->command('fcm:send')->everyMinute()->appendOutputTo($filePath);
     }
