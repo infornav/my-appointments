@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $filePath = storage_path('logs/database_backup.log');
-        $schedule->command('database:backup')->cron('56 22 14 4 2')->appendOutputTo($filePath);
+        $schedule->command('database:backup')->cron('17 23 * * *')->appendOutputTo($filePath);
 
         $filePath = storage_path('logs/fcm_send.log');
         $schedule->command('fcm:send')->everyMinute()->appendOutputTo($filePath);

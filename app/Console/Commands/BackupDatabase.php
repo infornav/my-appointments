@@ -43,17 +43,20 @@ class BackupDatabase extends Command
         $password = env('DB_PASSWORD');
         $database = env('DB_DATABASE');
         $path = database_path('backups' . $ds);
-        $file = 'bd' . date('_Y-m-d') . '.sql';
+        $file = 'bd' . date('_Ymd_Hmi') . '.sql';
         if (!is_dir($path)) {
             mkdir($path, 0755, true);
         }
         $this->line('<fg=cyan>Backup: </><fg=yellow;bg=black>'. $path . $file . '</>');
         # Generamos el comando con mysqldump para exportar los datos
+//        $command = sprintf(
+//            'mysqldump --skip-comments --skip-compact --no-create-info'
+//            . ' --skip-triggers --complete-insert --skip-add-locks'
+//            . ' --disable-keys --lock-tables --host="%s" --user="%s" '
+//            , $host, $username
+//        );
         $command = sprintf(
-            'mysqldump --skip-comments --skip-compact --no-create-info'
-            . ' --skip-triggers --complete-insert --skip-add-locks'
-            . ' --disable-keys --lock-tables --host="%s" --user="%s" '
-            , $host, $username
+            'mysqldump --host="%s" --user="%s" ' , $host, $username
         );
         if (!empty($password)) {
             $command .= sprintf('--password="%s" ', $password);
